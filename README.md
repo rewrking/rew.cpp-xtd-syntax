@@ -1,2 +1,2 @@
-# cpp-xtd-syntax
-C++ Extended Syntax Highlighting
+# C++ Extended Syntax Highlighting
+

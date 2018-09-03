@@ -1,0 +1,49 @@
+{
+	"name": "cpp-xtd-syntax",
+	"displayName": "C++ Extended Syntax Highlighting",
+	"description" : "Alternative & Additional Syntax Highlighting for C++",
+	"version": "1.0.0",
+	"publisher": "catbytes",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andrew-r-king/cpp-xtd-syntax"
+	},
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "*"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "rc",
+				"extensions": [ ".rc"],
+				"aliases": [ "Rc" ]
+			}
+		],
+		"grammars": [
+			{
+				"language": "c",
+				"scopeName": "source.c",
+				"path": "./syntaxes/mods/c.json"
+			},
+			{
+				"language": "cpp",
+				"scopeName": "source.cpp",
+				"path": "./syntaxes/mods/c++.json"
+			},
+			{
+				"language": "cpp",
+				"scopeName": "source.cpp.xtd",
+				"path": "./syntaxes/c++xtd.json"
+			},
+			{
+				"language": "rc",
+				"scopeName": "source.rc",
+				"path": "./syntaxes/rc.json"
+			}
+		]
+	}
+}
