@@ -6,7 +6,7 @@
 	"publisher": "catbytes",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/andrew-r-king/cpp-xtd-syntax"
+		"url": "https://github.com/andrew-r-king/rew.cpp-xtd-syntax"
 	},
 	"icon": "icon.png",
 	"engines": {
