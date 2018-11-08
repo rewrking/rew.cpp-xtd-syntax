@@ -132,45 +132,6 @@
 				}
 			]
 		},
-		"constructor": {
-			"patterns": [
-				{
-					"begin": "(?x)\n(?:^\\s*)  # beginning of line\n((?!while|for|do|if|else|switch|catch|enumerate|r?iterate)[A-Za-z_][A-Za-z0-9_:]*) # actual name\n\\s*(\\()  # opening bracket",
-					"beginCaptures": {
-						"2": {
-							"name": "punctuation.definition.parameters.begin.c"
-						}
-					},
-					"end": "\\)",
-					"endCaptures": {
-						"0": {
-							"name": "punctuation.definition.parameters.end.c"
-						}
-					},
-					"name": "meta.function.constructor.cpp",
-					"patterns": [
-						{
-							"include": "$base"
-						}
-					]
-				},
-				{
-					"begin": "(?x)\n(:)\n(\n  (?=\n    \\s*[A-Za-z_][A-Za-z0-9_:]* # actual name\n    \\s* (\\() # opening bracket\n  )\n)",
-					"beginCaptures": {
-						"1": {
-							"name": "punctuation.definition.parameters.c"
-						}
-					},
-					"end": "(?=\\{)",
-					"name": "meta.function.constructor.initializer-list.cpp",
-					"patterns": [
-						{
-							"include": "$base"
-						}
-					]
-				}
-			]
-		},
 		"special_block": {
 			"patterns": [
 				{
