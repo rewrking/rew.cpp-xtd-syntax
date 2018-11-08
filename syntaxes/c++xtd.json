@@ -27,16 +27,16 @@
 	"name": "C++ (Extended Syntax Highlighting)",
 	"patterns": [
 		{
-			"match": "\\b[A-Z_]{2,}\\b(?!::)",
+			"match": "(?<!::)\\b[A-Z_]{2,}\\b(?!::)",
 			"name": "entity.name.macro.cpp"
 		},
 		{
 			"name": "meta.std-library.cpp",
 			"begin": "(?=std::)",
-			"end": "(?=[^a-z_:])",
+			"end": "(?=[^a-z0-9_:])",
 			"patterns": [
 				{
-					"match": "\\b[a-z_]+\\b",
+					"match": "\\b[a-z0-9_]+\\b",
 					"name": "keyword.lib.segment-stl"
 				},
 				{
