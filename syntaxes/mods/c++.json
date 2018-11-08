@@ -56,7 +56,7 @@
 		},
 		{
 			"match": "\\bnullptr\\b",
-			"name": "constant.language.cpp"
+			"name": "constant.language.nullptr.cpp"
 		},
 		{
 			"match": "\\btemplate\\b\\s*",
