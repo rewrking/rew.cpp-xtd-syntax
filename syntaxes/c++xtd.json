@@ -89,8 +89,12 @@
 			"name": "storage.modifier.label.c"
 		},
 		{
-			"match": "\\w*(?=\\()",
+			"match": "(?<!new )\\b\\w+\\b(?=\\()",
 			"name": "entity.name.function.c"
+		},
+		{
+			"match": "(?<=new )\\b\\w+\\b(?=\\()",
+			"name": "entity.name.type.class.c"
 		},
 		{
 			"match": "\\b(ulong|ullong|uchar|llong)\\b",
