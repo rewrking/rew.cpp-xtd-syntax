@@ -57,6 +57,10 @@
 			"include": "source.cpp"
 		},
 		{
+			"match": "\\b(static_assert)\\b\\s{,1}",
+			"name": "support.function.cpp"
+		},
+		{
 			"match": "\\w+(?=\\[)\\b",
 			"name": "entity.name.array.c"
 		},

@@ -359,13 +359,13 @@
 				{
 					"captures": {
 						"1": {
-							"name": "variable.other.c"
+							"name": "function.variable.constructor.c"
 						},
 						"2": {
 							"name": "punctuation.definition.parameters.c"
 						}
 					},
-					"match": "(?x)\n(?:\n  (?:\n    (?=\\s)(?<!else|new|return)\n    (?<=\\w) \\s+  # or word + space before name\n  )\n)\n(\n  (?:[A-Za-z_][A-Za-z0-9_]*+ | :: )++   # actual name\n  |\n  (?:(?<=operator) (?:[-*&<>=+!]+ | \\(\\) | \\[\\]))\n)\n\\s*(\\() # opening bracket",
+					"match": "(?x)\n(?:\n  (?:\n    (?=\\s)(?<!else|new|return|if)\n    (?<=\\w) \\s+  # or word + space before name\n  )\n)\n(\n  (?:[A-Za-z_][A-Za-z0-9_]*+ | :: )++   # actual name\n  |\n  (?:(?<=operator) (?:[-*&<>=+!]+ | \\(\\) | \\[\\]))\n)\n\\s*(\\() # opening bracket",
 					"name": "meta.initialization.c"
 				},
 				{
