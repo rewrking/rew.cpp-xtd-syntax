@@ -680,7 +680,6 @@
 						}
 					},
 					"end": ":",
-					"applyEndPatternLast": true,
 					"endCaptures": {
 						"0": {
 							"name": "keyword.operator.ternary.c"
