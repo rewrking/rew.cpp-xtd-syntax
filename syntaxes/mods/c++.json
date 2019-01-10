@@ -148,6 +148,11 @@
 						}
 					},
 					"end": "(;)",
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.terminator.statement.c"
+						}
+					},
 					"name": "meta.using-namespace-declaration.cpp"
 				},
 				{

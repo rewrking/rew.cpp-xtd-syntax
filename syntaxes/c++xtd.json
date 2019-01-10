@@ -50,7 +50,7 @@
 			"name": "keyword.lib.segment.first"
 		},
 		{
-			"match": "(?!std)((?<=::)|(?<=::~)|(?<=::\\*))\\w+\\b",
+			"match": "(?!std)((?<=::)|(?<=::~)|(?<=::\\*))(?!operator)\\w+\\b",
 			"name": "keyword.lib.segment.last"
 		},
 		{
