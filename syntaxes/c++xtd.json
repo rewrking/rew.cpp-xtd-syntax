@@ -85,7 +85,7 @@
 			"name": "entity.name.type.class.c"
 		},
 		{
-			"match": "\\b((private|protected|public|signals)?\\s?(slots):)",
+			"match": "\\b(private|protected|public|signals)\\s?(slots)?:?",
 			"name": "storage.modifier.cpp.qt"
 		},
 		{
