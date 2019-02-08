@@ -199,7 +199,7 @@
 					]
 				},
 				{
-					"begin": "\\b(class|struct)\\b\\s*([_A-Za-z0-9]*\\b)(\\({,1})([a-z]*)(\\){,1})\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*(((:|,)*\\s*(public|protected|private)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*)*)",
+					"begin": "\\b(class|struct)\\b\\s*([_A-Za-z0-9]*\\b)(\\(?)([a-z]*)(\\)?)\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*(((:|,)*\\s*(public|protected|private)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*)*)",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.type.cpp"
@@ -233,7 +233,12 @@
 							]
 						}
 					},
-					"end": "(?<=\\})|(?=(;|\\(|\\)|>|\\[|\\]|=))",
+					"end": "(?<=\\})|(;)|(\\(|\\)|>|\\[|\\]|=)",
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.terminator.statement.c"
+						}
+					},
 					"name": "meta.class-struct-block.cpp",
 					"patterns": [
 						{
