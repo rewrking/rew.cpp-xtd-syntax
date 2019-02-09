@@ -85,11 +85,11 @@
 			"name": "entity.name.type.class.c"
 		},
 		{
-			"match": "\\b(private|protected|public|signals)\\s?(slots)?:?",
+			"match": "\\b(private|protected|public|signals)\\s?(slots)?(?!:)",
 			"name": "storage.modifier.cpp.qt"
 		},
 		{
-			"match": "\\b(\\w*:)( |\\n|(?=;))",
+			"match": "\\b(\\w+(?=:))",
 			"name": "storage.modifier.label.c"
 		},
 		{
@@ -103,6 +103,10 @@
 		{
 			"match": "\\b(ulong|ullong|uchar|llong)\\b",
 			"name": "support.type.sys-types.cpp"
+		},
+		{
+			"match": "\\b(qint8|qint16|qint32|qint64|qintptr|qlonglong|qptrdiff|qreal|qsizetype|quint8|quint16|quint32|quint64|quintptr|qulonglong)\\b",
+			"name": "support.type.qt.cpp"
 		}
 	]
 }

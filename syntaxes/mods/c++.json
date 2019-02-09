@@ -39,7 +39,7 @@
 			"name": "storage.modifier.cpp"
 		},
 		{
-			"match": "\\b(private:|protected:|public:)",
+			"match": "\\b(private|protected|public)\\b",
 			"name": "storage.modifier.cpp"
 		},
 		{
