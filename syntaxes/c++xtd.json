@@ -65,8 +65,12 @@
 			"name": "entity.name.array.c"
 		},
 		{
-			"match": "(?<=[\\.>])\\w+(?=\\()\\b",
+			"match": "(?<=[\\.>])\\w+\\b(?=[\\(<])",
 			"name": "entity.name.function.c"
+		},
+		{
+			"match": "\\b\\w+\\b(?=<)",
+			"name": "entity.name.function.template.cpp"
 		},
 		{
 			"match": "~",
