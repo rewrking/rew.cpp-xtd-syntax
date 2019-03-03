@@ -81,7 +81,7 @@
 			"name": "punctuation.section.arguments.end.bracket.round.c"
 		},
 		{
-			"match": "(?<!~)\\b([A-Z_]{1})\\w+\\b(?!\\()",
+			"match": "(?<!~)\\b([A-Z]{1})\\w+\\b(?!\\()",
 			"name": "entity.name.type.class.c"
 		},
 		{
