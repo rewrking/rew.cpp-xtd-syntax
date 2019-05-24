@@ -69,7 +69,7 @@
 			"name": "entity.name.function.c"
 		},
 		{
-			"match": "\\b\\w+\\b(?=<)",
+			"match": "\\b\\w+\\b(?=<.+>)",
 			"name": "entity.name.function.template.cpp"
 		},
 		{

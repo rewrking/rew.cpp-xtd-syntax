@@ -87,19 +87,6 @@
 		}
 	],
 	"repository": {
-		"angle_brackets": {
-			"begin": "<",
-			"end": ">",
-			"name": "meta.angle-brackets.cpp",
-			"patterns": [
-				{
-					"include": "#angle_brackets"
-				},
-				{
-					"include": "$base"
-				}
-			]
-		},
 		"block": {
 			"begin": "\\{",
 			"beginCaptures": {
@@ -199,7 +186,7 @@
 					]
 				},
 				{
-					"begin": "\\b(class|struct)\\b\\s*([_A-Za-z0-9]*\\b)(\\(?)([a-z]*)(\\)?)\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*(((:|,)*\\s*(public|protected|private)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*)*)",
+					"begin": "\\b(class|struct)\\b\\s*([_a-z]*\\b|[A-Z_]*\\b)(\\(?[a-z]*\\)?)\\s*([_A-Za-z][_A-Za-z0-9]*)\\s*(((:|,)*\\s*(public|protected|private)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*)*)",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.type.cpp"
@@ -208,15 +195,21 @@
 							"name": "entity.name.macro.cpp"
 						},
 						"3": {
-							"name": "punctuation.section.parens.begin.bracket.round.c"
+							"patterns": [
+								{
+									"match": "\\(",
+									"name": "punctuation.section.parens.begin.bracket.round.c"
+								},
+								{
+									"match": "\\)",
+									"name": "punctuation.section.parens.begin.bracket.round.c"
+								}
+							]
 						},
-						"5": {
-							"name": "punctuation.section.parens.begin.bracket.round.c"
-						},
-						"6": {
+						"4": {
 							"name": "entity.name.type.cpp"
 						},
-						"7": {
+						"5": {
 							"patterns": [
 								{
 									"match": "(:|,)",
@@ -233,7 +226,7 @@
 							]
 						}
 					},
-					"end": "(?<=\\})|(;)|(\\(|\\)|>|\\[|\\]|=)",
+					"end": "(?<=\\}|;|\\(|\\)|>|\\[|\\]|=)",
 					"endCaptures": {
 						"1": {
 							"name": "punctuation.terminator.statement.c"
