@@ -3,7 +3,7 @@
         "!"
     ],
     "version": "1.0",
-    "scopeName": "source.cpp",
+    "scopeName": "source.c_cpp",
     "fileTypes": [
         "c",
         "h.in",
@@ -30,7 +30,7 @@
     "name": "C++ (Extended Syntax Highlighting)",
     "patterns": [
         {
-            "match": "\\{|\\}|\\(|\\)|\\.|\\*|\\+|,|:|;|<|>|=|\\||-|\\/",
+            "match": "\\{|\\}|\\(|\\)|\\[|\\]|\\.|\\*|\\+|,|:|;|<|>|=|\\||-|\\/|&|!",
             "name": "punctuation.c_cpp"
         }
     ]

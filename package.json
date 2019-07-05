@@ -21,7 +21,7 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "cpp",
+				"id": "c_cpp",
 				"extensions": [
 					".c",
 					".h.in",
@@ -60,8 +60,8 @@
 		],
 		"grammars": [
 			{
-				"language": "cpp",
-				"scopeName": "source.cpp",
+				"language": "c_cpp",
+				"scopeName": "source.c_cpp",
 				"path": "./syntaxes/c_cpp_experimental.json"
 			}
 		]

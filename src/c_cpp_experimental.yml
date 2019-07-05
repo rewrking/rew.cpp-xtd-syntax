@@ -2,7 +2,7 @@
 information_for_contributors:
 - "!"
 version: '1.0'
-scopeName: source.cpp
+scopeName: source.c_cpp
 fileTypes:
 - c
 - h.in
@@ -27,5 +27,5 @@ fileTypes:
 firstLineMatch: "(?i)-\\*-[^*]*(Mode:\\s*)?C\\+\\+(\\s*;.*?)?\\s*-\\*-"
 name: C++ (Extended Syntax Highlighting)
 patterns:
-- match: "\\{|\\}|\\(|\\)|\\.|\\*|\\+|,|:|;|<|>|=|\\||-|\\/"
+- match: "\\{|\\}|\\(|\\)|\\[|\\]|\\.|\\*|\\+|,|:|;|<|>|=|\\||-|\\/|&|!"
   name: punctuation.c_cpp
