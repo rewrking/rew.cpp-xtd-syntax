@@ -1,0 +1,69 @@
+---
+information_for_contributors:
+- "!"
+version: '1.0'
+scopeName: source.cpp.xtd
+fileTypes:
+- cc
+- cpp
+- cp
+- cxx
+- c++
+- cu
+- cuh
+- h
+- hh
+- hpp
+- hxx
+- h++
+- inl
+- ino
+- ipp
+- tcc
+- tpp
+firstLineMatch: "(?i)-\\*-[^*]*(Mode:\\s*)?C\\+\\+(\\s*;.*?)?\\s*-\\*-"
+name: C++ (Extended Syntax Highlighting)
+patterns:
+- match: "(?<!::)\\b[A-Z_]{2,}\\b(?!::)"
+  name: entity.name.macro.cpp
+- name: meta.std-library.cpp
+  begin: "(?=std::)"
+  end: "(?=[^a-z0-9_:])"
+  patterns:
+  - match: "\\b[a-z0-9_]+\\b"
+    name: keyword.lib.segment-stl
+  - match: "::"
+    name: punctuation.separator.namespace.access.cpp
+- match: "(^|(?<=[ \\n\\t{\\[\\(|=<>;,&!]))\\w+(?=::)\\b"
+  name: keyword.lib.segment.first
+- match: "(?!std)((?<=::)|(?<=::~)|(?<=::\\*))(?!operator)\\w+\\b"
+  name: keyword.lib.segment.last
+- include: source.cpp
+- match: "\\b(static_assert)\\b\\s{,1}"
+  name: support.function.cpp
+- match: "\\w+(?=\\[)\\b"
+  name: entity.name.array.c
+- match: "(?<=[\\.>])\\w+\\b(?=[\\(<])"
+  name: entity.name.function.c
+- match: "\\b\\w+\\b(?=<.+>\\s*\\()"
+  name: entity.name.function.template.cpp
+- match: "~"
+  name: punctuation.destructor.cpp
+- match: ":"
+  name: punctuation.switch.case.colon.c
+- match: "\\)"
+  name: punctuation.section.arguments.end.bracket.round.c
+- match: "(?<!~)\\b((_?)[A-Z]{1})\\w+\\b(?!\\()"
+  name: entity.name.type.class.c
+- match: "\\b(private|protected|public|signals)\\s?(slots)?(?!:)"
+  name: storage.modifier.cpp.qt
+- match: "\\b(\\w+(?=:))"
+  name: storage.modifier.label.c
+- match: "(?<!new )\\b\\w+\\b(?=\\()"
+  name: entity.name.function.c
+- match: "(?<=new )\\b\\w+\\b(?=\\()"
+  name: entity.name.type.class.c
+- match: "\\b(ulong|ullong|uchar|llong)\\b"
+  name: support.type.sys-types.cpp
+- match: "\\b(qint8|qint16|qint32|qint64|qintptr|qlonglong|qptrdiff|qreal|qsizetype|quint8|quint16|quint32|quint64|quintptr|qulonglong)\\b"
+  name: support.type.qt.cpp

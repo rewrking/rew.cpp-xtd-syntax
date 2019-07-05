@@ -1,0 +1,37 @@
+{
+    "information_for_contributors": [
+        "!"
+    ],
+    "version": "1.0",
+    "scopeName": "source.cpp",
+    "fileTypes": [
+        "c",
+        "h.in",
+        "xpm",
+        "cc",
+        "cpp",
+        "cp",
+        "cxx",
+        "c++",
+        "cu",
+        "cuh",
+        "h",
+        "hh",
+        "hpp",
+        "hxx",
+        "h++",
+        "inl",
+        "ino",
+        "ipp",
+        "tcc",
+        "tpp"
+    ],
+    "firstLineMatch": "(?i)-\\*-[^*]*(Mode:\\s*)?C\\+\\+(\\s*;.*?)?\\s*-\\*-",
+    "name": "C++ (Extended Syntax Highlighting)",
+    "patterns": [
+        {
+            "match": "\\{|\\}|\\(|\\)|\\.|\\*|\\+|,|:|;|<|>|=|\\||-|\\/",
+            "name": "punctuation.c_cpp"
+        }
+    ]
+}

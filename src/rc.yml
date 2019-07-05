@@ -1,0 +1,17 @@
+---
+information_for_contributors:
+- "!"
+version: '1.0'
+scopeName: source.rc
+fileTypes:
+- rc
+firstLineMatch: "(?i)-\\*-[^*]*(Mode:\\s*)?C\\+\\+(\\s*;.*?)?\\s*-\\*-"
+name: Windows Resource
+patterns:
+- match: "\\b(ACCELERATORS|BITMAP|CURSOR|DIALOG|DIALOGEX|FONT|HTML|ICON|MENU|MENUEX|MESSAGETABLE|POPUP|PLUGPLAY|RCDATA|STRINGTABLE|TEXTINCLUDE|TYPELIB|VERSIONINFO|VXD)\\b"
+  name: keyword.win.res.resources
+- match: "\\b(AUTO3STATE|AUTOCHECKBOX|AUTORADIOBUTTON|CHECKBOX|COMBOBOX|CONTROL|CTEXT|DEFPUSHBUTTON|EDITTEXT|GROUPBOX|LISTBOX|LTEXT|PUSHBOT|PUSHBUTTON|RADIOBUTTON|RTEXT|SCROLLBAR|STATE3)\\b"
+  name: keyword.win.res.controls
+- match: "\\b(CAPTION|CHARACTERISTICS|CLASS|EXSTYLE|LANGUAGE|MENUITEM|STYLE|VERSION)\\b"
+  name: keyword.win.res.statements
+- include: source.c
