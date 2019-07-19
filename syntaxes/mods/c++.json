@@ -226,7 +226,7 @@
 							]
 						}
 					},
-					"end": "(?<=\\}|;|\\(|\\)|>|\\[|\\]|=)",
+					"end": "(?<=\\}|;|\\(|\\)|\\[|\\]|=)",
 					"endCaptures": {
 						"1": {
 							"name": "punctuation.terminator.statement.c"
