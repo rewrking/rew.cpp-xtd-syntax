@@ -105,7 +105,7 @@
 			"name": "entity.name.type.class.c"
 		},
 		{
-			"match": "\\b(ulong|ullong|uchar|llong)\\b",
+			"match": "\\b(ulong|ullong|uchar|llong|ldouble)\\b",
 			"name": "support.type.sys-types.cpp"
 		},
 		{
