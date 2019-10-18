@@ -81,6 +81,10 @@
 			"name": "punctuation.switch.case.colon.c"
 		},
 		{
+			"match": "\\(",
+			"name": "punctuation.section.arguments.begin.bracket.round.c"
+		},
+		{
 			"match": "\\)",
 			"name": "punctuation.section.arguments.end.bracket.round.c"
 		},

@@ -558,25 +558,6 @@
 				}
 			]
 		},
-		"parens": {
-			"begin": "\\(",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.section.parens.begin.bracket.round.c"
-				}
-			},
-			"end": "\\)",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.section.parens.end.bracket.round.c"
-				}
-			},
-			"patterns": [
-				{
-					"include": "$base"
-				}
-			]
-		},
 		"parens-block": {
 			"begin": "\\(",
 			"beginCaptures": {
