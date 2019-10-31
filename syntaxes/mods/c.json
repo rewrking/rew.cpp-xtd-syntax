@@ -34,7 +34,11 @@
 			"include": "#storage_types"
 		},
 		{
-			"match": "\\b(const|extern|register|restrict|static|volatile|inline)\\b",
+			"match": "\\b(const|extern|restrict|static|volatile|inline)\\b",
+			"name": "storage.modifier.c"
+		},
+		{
+			"match": "\\b(register)(?= )\\b",
 			"name": "storage.modifier.c"
 		},
 		{

@@ -54,6 +54,10 @@
 			"name": "keyword.lib.segment.last"
 		},
 		{
+			"match": " *////////////////////////////////////////////////////////////",
+			"name": "punctuation.definition.comment.cpp"
+		},
+		{
 			"include": "source.cpp"
 		},
 		{
