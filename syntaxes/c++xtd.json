@@ -85,6 +85,10 @@
 			"name": "punctuation.switch.case.colon.c"
 		},
 		{
+			"match": "(?<!\\.)\\.\\.\\.(?!\\.)",
+			"name": "punctuation.parameter-pack.cpp"
+		},
+		{
 			"match": "\\(",
 			"name": "punctuation.section.arguments.begin.bracket.round.c"
 		},
