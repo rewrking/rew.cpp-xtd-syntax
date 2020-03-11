@@ -186,7 +186,7 @@
 					]
 				},
 				{
-					"begin": "\\b(class|struct)\\b\\s+([_a-z]*\\b|[A-Z_]*\\b)(\\(?[a-z]*\\)?)\\s*([_A-Za-z][_A-Za-z0-9]*)\\s*(((:|,)*\\s*(public|protected|private)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*)*)",
+					"begin": "\\b(class|struct)\\b\\s+([_a-z]*\\b|[A-Z_]*\\b)\\s*([A-Za-z]*)(\\(?[a-z]*\\)?)\\s*([_A-Za-z][_A-Za-z0-9]*)\\s*(((:|,)*\\s*(public|protected|private)\\b\\s*([_A-Za-z][_A-Za-z0-9]*\\b)\\s*)*)",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.type.cpp"
@@ -195,6 +195,9 @@
 							"name": "entity.name.macro.cpp"
 						},
 						"3": {
+							"name": "entity.name.type.cpp"
+						},
+						"4": {
 							"patterns": [
 								{
 									"match": "\\(",
@@ -206,10 +209,10 @@
 								}
 							]
 						},
-						"4": {
+						"5": {
 							"name": "entity.name.type.cpp"
 						},
-						"5": {
+						"6": {
 							"patterns": [
 								{
 									"match": "(:|,)",
@@ -217,7 +220,7 @@
 								},
 								{
 									"match": "(public|protected|private)",
-									"name": "storage.type.modifier.cpp"
+									"name": "storage.modifier.cpp"
 								},
 								{
 									"match": "[_A-Za-z][_A-Za-z0-9]*",
