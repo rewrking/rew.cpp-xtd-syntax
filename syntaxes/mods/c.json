@@ -580,7 +580,7 @@
 					"name": "documentation.keyword.match.cpp",
 					"captures": {
 						"2": {
-							"name": "documentation.keyword.param.cpp"
+							"name": "documentation.keyword.tparam.cpp"
 						},
 						"3": {
 							"name": "comment.block.c"
