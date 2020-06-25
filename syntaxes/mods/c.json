@@ -576,7 +576,19 @@
 					}
 				},
 				{
-					"match": "(?:[@\\\\](par|param|tparam))\\b\\s(\\w*)(.*)",
+					"match": "(?:[@\\\\](tparam))\\b\\s(\\w*)(.*)",
+					"name": "documentation.keyword.match.cpp",
+					"captures": {
+						"2": {
+							"name": "documentation.keyword.param.cpp"
+						},
+						"3": {
+							"name": "comment.block.c"
+						}
+					}
+				},
+				{
+					"match": "(?:[@\\\\](par|param))\\b\\s(\\w*)(.*)",
 					"name": "documentation.keyword.match.cpp",
 					"captures": {
 						"2": {
