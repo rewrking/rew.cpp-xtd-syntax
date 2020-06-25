@@ -576,11 +576,14 @@
 					}
 				},
 				{
-					"match": "(?:[@\\\\](par|param))\\b\\s(\\w+)\\b",
+					"match": "(?:[@\\\\](par|param|tparam))\\b\\s(\\w*)(.*)",
 					"name": "documentation.keyword.match.cpp",
 					"captures": {
 						"2": {
 							"name": "documentation.keyword.param.cpp"
+						},
+						"3": {
+							"name": "comment.block.c"
 						}
 					}
 				},
