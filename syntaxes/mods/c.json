@@ -406,7 +406,12 @@
 						}
 					},
 					"match": "^/\\* =(\\s*.*?)\\s*= \\*/$\\n?",
-					"name": "comment.block.c"
+					"name": "comment.block.c",
+					"patterns": [
+						{
+							"include": "#doxygen_patterns"
+						}
+					]
 				},
 				{
 					"begin": "/\\*(?!\\*)(?!\\*)",
@@ -421,7 +426,12 @@
 							"name": "punctuation.definition.comment.end.c"
 						}
 					},
-					"name": "comment.block.c"
+					"name": "comment.block.c",
+					"patterns": [
+						{
+							"include": "#doxygen_patterns"
+						}
+					]
 				},
 				{
 					"begin": "/\\*\\*(?!\\*)",
@@ -439,12 +449,7 @@
 					"name": "documentation.block.c",
 					"patterns": [
 						{
-							"match": "(?:@(a|addindex|addtogroup|anchor|arg|attention|author|b|brief|bug|c|class|code|date|def|defgroup|deprecated|dontinclude|e|em|endcode|endhtmlonly|endif|endlatexonly|endlink|endverbatim|enum|example|exception|file|fn|hideinitializer|htmlinclude|htmlonly|if|image|include|ingroup|internal|invariant|interface|latexonly|li|line|link|mainpage|name|namespace|nosubgrouping|note|overload|p|page|par|param|post|pre|ref|relates|remarks|return|retval|sa|section|see|showinitializer|since|skip|skipline|struct|subsection|test|throw|todo|typedef|union|until|var|verbatim|verbinclude|version|warning|weakgroup))\\b",
-							"name": "documentation.keyword.match.cpp"
-						},
-						{
-							"match": "(?:@\\w+)\\b",
-							"name": "documentation.keyword.error.cpp"
+							"include": "#doxygen_patterns"
 						}
 					]
 				},
@@ -461,7 +466,12 @@
 							"name": "comment.line.spacer.c"
 						}
 					},
-					"name": "comment.block.c"
+					"name": "comment.block.c",
+					"patterns": [
+						{
+							"include": "#doxygen_patterns"
+						}
+					]
 				},
 				{
 					"match": "\\*/.*\\n",
@@ -551,6 +561,32 @@
 							"name": "constant.character.escape.line-continuation.c"
 						}
 					}
+				}
+			]
+		},
+		"doxygen_patterns": {
+			"patterns": [
+				{
+					"match": "(?:[@\\\\](a|addindex|addtogroup|anchor|arg|attention|author|b|brief|bug|c|class|code|date|def|defgroup|deprecated|dontinclude|e|em|endcode|endhtmlonly|endif|endlatexonly|endlink|endverbatim|enum|example|exception|file|fn|hideinitializer|htmlinclude|htmlonly|if|image|include|ingroup|internal|invariant|interface|latexonly|li|line|link|mainpage|name|namespace|nosubgrouping|note|overload|p|page|post|pre|ref|relates|remarks|return|retval|sa|section|see|showinitializer|since|skip|skipline|struct|subsection|test|throw|todo|typedef|union|until|var|verbatim|verbinclude|version|warning|weakgroup))\\b\\s(.+)",
+					"name": "documentation.keyword.match.cpp",
+					"captures": {
+						"2": {
+							"name": "comment.block.c"
+						}
+					}
+				},
+				{
+					"match": "(?:[@\\\\](par|param))\\b\\s(\\w+)\\b",
+					"name": "documentation.keyword.match.cpp",
+					"captures": {
+						"2": {
+							"name": "documentation.keyword.param.cpp"
+						}
+					}
+				},
+				{
+					"match": "(?:@\\w+)\\b",
+					"name": "documentation.keyword.error.cpp"
 				}
 			]
 		},
