@@ -79,7 +79,7 @@
 			"name": "storage.type.cpp"
 		},
 		{
-			"match": "\\b(constexpr|export|mutable|typename|thread_local)\\b",
+			"match": "\\b(constexpr|export|mutable|typename|concept|thread_local)\\b",
 			"name": "storage.modifier.cpp"
 		},
 		{
