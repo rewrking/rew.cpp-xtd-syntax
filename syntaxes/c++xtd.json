@@ -175,6 +175,10 @@
 		{
 			"match": "\\b(qint8|qint16|qint32|qint64|qintptr|qlonglong|qptrdiff|qreal|qsizetype|quint8|quint16|quint32|quint64|quintptr|qulonglong)\\b",
 			"name": "support.type.qt.cpp"
+		},
+		{
+			"match": "(?<=template\\s*<.*,?)\\b([\\w_]+)\\b(?=[\\s<])",
+			"name": "keyword.control.concept.cpp"
 		}
 	]
 }
