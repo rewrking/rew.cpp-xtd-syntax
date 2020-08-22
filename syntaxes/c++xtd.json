@@ -92,7 +92,7 @@
 					"name": "meta.string.literal.name.cpp"
 				}
 			},
-			"end": "\\s*\\)\"(_json)",
+			"end": "\\s*\\)\"(_json)?",
 			"endCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.end.cpp"
