@@ -40,7 +40,7 @@
 					"name": "meta.string.literal.name.cpp"
 				}
 			},
-			"end": "\\)(glsl)\"",
+			"end": "\\s*\\)(glsl)\"",
 			"endCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.end.cpp"
@@ -57,6 +57,32 @@
 			]
 		},
 		{
+			"begin": "(u|u8|U|L)?R\"(makefile)\\(",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.cpp"
+				},
+				"2": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"end": "\\s*\\)(makefile)\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.cpp"
+				},
+				"1": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"name": "string.quoted.double.raw.cpp",
+			"patterns": [
+				{
+					"include": "source.makefile"
+				}
+			]
+		},
+		{
 			"begin": "(u|u8|U|L)?R\"\\(",
 			"beginCaptures": {
 				"0": {
@@ -66,7 +92,7 @@
 					"name": "meta.string.literal.name.cpp"
 				}
 			},
-			"end": "\\)\"(_json)",
+			"end": "\\s*\\)\"(_json)",
 			"endCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.end.cpp"
