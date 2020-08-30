@@ -83,7 +83,7 @@
 			]
 		},
 		{
-			"begin": "(u|u8|U|L)?R\"\\(",
+			"begin": "(u|u8|U|L)?R\"(|json)\\(",
 			"beginCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.begin.cpp"
@@ -92,7 +92,7 @@
 					"name": "meta.string.literal.name.cpp"
 				}
 			},
-			"end": "\\s*\\)\"(_json)?",
+			"end": "\\s*\\)(|json)\"(_json)?",
 			"endCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.end.cpp"
