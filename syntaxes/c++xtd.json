@@ -203,7 +203,7 @@
 			"name": "support.type.qt.cpp"
 		},
 		{
-			"match": "(?<=template\\s*<.*,?)\\b([\\w_]+)\\b(?=[\\s<])",
+			"match": "(?<=template\\s*<.*,?)\\b([\\w_]+)\\b(?=[\\.\\s<])",
 			"name": "keyword.control.concept.cpp"
 		}
 	]
