@@ -3,7 +3,7 @@
 		"!"
 	],
 	"version": "1.0",
-	"scopeName": "source.cpp.xtd",
+	"scopeName": "source.objcpp.xtd",
 	"fileTypes": [
 		"cc",
 		"cpp",
@@ -21,7 +21,9 @@
 		"ino",
 		"ipp",
 		"tcc",
-		"tpp"
+		"tpp",
+		"m",
+		"mm"
 	],
 	"firstLineMatch": "(?i)-\\*-[^*]*(Mode:\\s*)?C\\+\\+(\\s*;.*?)?\\s*-\\*-",
 	"name": "C++ (Extended Syntax Highlighting)",
