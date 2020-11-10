@@ -52,7 +52,7 @@
 			{
 				"language": "objective-cpp",
 				"scopeName": "source.objcpp.xtd",
-				"path": "./syntaxes/c++xtd.json"
+				"path": "./syntaxes/objective-c++xtd.json"
 			},
 			{
 				"language": "rc",
