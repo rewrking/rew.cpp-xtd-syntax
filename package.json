@@ -50,7 +50,7 @@
 				"path": "./syntaxes/c++xtd.json"
 			},
 			{
-				"language": "cpp",
+				"language": "objective-cpp",
 				"scopeName": "source.objcpp.xtd",
 				"path": "./syntaxes/c++xtd.json"
 			},
