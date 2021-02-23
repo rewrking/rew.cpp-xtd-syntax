@@ -201,7 +201,7 @@
 			"name": "punctuation.section.arguments.end.bracket.round.c"
 		},
 		{
-			"match": "(?<!~)\\b((_?)[A-Z]{1})\\w+\\b(?!\\()",
+			"match": "(?<!~)\\b((_?)[A-Z]{1})\\w+\\b(?![\\(\\.\\-])",
 			"name": "entity.name.type.class.c"
 		},
 		{
