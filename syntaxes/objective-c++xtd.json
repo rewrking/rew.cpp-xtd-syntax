@@ -132,7 +132,7 @@
 			"name": "string.quoted.double.raw.cpp",
 			"patterns": [
 				{
-					"include": "source.html"
+					"include": "text.html"
 				}
 			]
 		},
@@ -158,7 +158,7 @@
 			"name": "string.quoted.double.raw.cpp",
 			"patterns": [
 				{
-					"include": "source.xml"
+					"include": "text.xml"
 				}
 			]
 		},
