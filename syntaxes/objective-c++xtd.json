@@ -85,6 +85,84 @@
 			]
 		},
 		{
+			"begin": "(u|u8|U|L)?R\"(ninja)\\(",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.cpp"
+				},
+				"2": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"end": "\\s*\\)(ninja)\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.cpp"
+				},
+				"1": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"name": "string.quoted.double.raw.cpp",
+			"patterns": [
+				{
+					"include": "source.ninja"
+				}
+			]
+		},
+		{
+			"begin": "(u|u8|U|L)?R\"(html)\\(",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.cpp"
+				},
+				"2": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"end": "\\s*\\)(html)\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.cpp"
+				},
+				"1": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"name": "string.quoted.double.raw.cpp",
+			"patterns": [
+				{
+					"include": "source.html"
+				}
+			]
+		},
+		{
+			"begin": "(u|u8|U|L)?R\"(xml)\\(",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.cpp"
+				},
+				"2": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"end": "\\s*\\)(xml)\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.cpp"
+				},
+				"1": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"name": "string.quoted.double.raw.cpp",
+			"patterns": [
+				{
+					"include": "source.xml"
+				}
+			]
+		},
+		{
 			"begin": "(u|u8|U|L)?R\"(|json)\\(",
 			"beginCaptures": {
 				"0": {
