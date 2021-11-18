@@ -21,6 +21,10 @@
 				"id": "rc",
 				"extensions": [ ".rc"],
 				"aliases": [ "Rc" ]
+			},
+			{
+				"id": "cpp",
+				"extensions": [".cppm", ".ixx", ".mxx"]
 			}
 		],
 		"grammars": [
