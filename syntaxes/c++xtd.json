@@ -283,6 +283,65 @@
 		{
 			"match": "(?<=template\\s*<.*,?)\\b([\\w_]+)\\b(?=[\\.\\s<])",
 			"name": "keyword.control.concept.cpp"
+		},
+		{
+			"begin": "^\\s*(import)\\b\\s*",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.control.directive.import.cpp"
+				}
+			},
+			"end": "(?=(?://|/\\*))|(?<!\\\\)(?=;)",
+			"name": "meta.preprocessor.import.cpp",
+			"patterns": [
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.cpp"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.cpp"
+						}
+					},
+					"name": "string.quoted.double.import.cpp"
+				},
+				{
+					"begin": "<",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.cpp"
+						}
+					},
+					"end": ">",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.cpp"
+						}
+					},
+					"name": "string.quoted.other.lt-gt.import.cpp"
+				},
+				{
+					"match": "\\w+",
+					"name": "string.named.import.cpp"
+				}
+			]
+		},
+		{
+			"begin": "\\b(module)\\b\\s*((?:[_A-Za-z][_A-Za-z0-9]*\\b(::)?)*)",
+			"beginCaptures": {
+				"1": {
+					"name": "storage.type.cpp"
+				},
+				"2": {
+					"name": "entity.name.type.cpp"
+				}
+			},
+			"end": "(?=;)",
+			"name": "meta.using-namespace-declaration.cpp"
 		}
 	]
 }
