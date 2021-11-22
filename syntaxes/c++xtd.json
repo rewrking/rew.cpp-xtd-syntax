@@ -288,7 +288,7 @@
 			"begin": "^\\s*(import)\\b\\s*",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.control.directive.import.cpp"
+					"name": "keyword.control.import.cpp"
 				}
 			},
 			"end": "(?=(?://|/\\*))|(?<!\\\\)(?=;)",
