@@ -19,12 +19,12 @@
 		"languages": [
 			{
 				"id": "rc",
-				"extensions": [ ".rc"],
+				"extensions": [".rc"],
 				"aliases": [ "Rc" ]
 			},
 			{
 				"id": "cpp",
-				"extensions": [".cppm", ".ixx", ".mxx"]
+				"extensions": [".cpm", ".ixx", ".mpp", ".mxx", ".cppm"]
 			}
 		],
 		"grammars": [
