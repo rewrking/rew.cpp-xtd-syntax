@@ -285,9 +285,9 @@
 			"name": "keyword.control.concept.cpp"
 		},
 		{
-			"begin": "^\\s*(import)\\b\\s*",
+			"begin": "(?<=(export\\b)|^)\\s*(import)\\b\\s*",
 			"beginCaptures": {
-				"1": {
+				"2": {
 					"name": "keyword.control.import.cpp"
 				}
 			},
@@ -342,7 +342,7 @@
 			]
 		},
 		{
-			"begin": "(?<=export\\b|^)\\s*(module)\\b\\s+((?:[_A-Za-z][_A-Za-z0-9]*\\b(:)?)*)",
+			"begin": "(?<=(export\\b)|^)\\s*(module)\\b\\s+((?:[_A-Za-z][_A-Za-z0-9]*\\b(:)?)*)",
 			"beginCaptures": {
 				"1": {
 					"name": "storage.type.cpp"
