@@ -291,7 +291,7 @@
 					"name": "keyword.control.import.cpp"
 				}
 			},
-			"end": "(?=(?://|/\\*))|(?<!\\\\)(?=;)",
+			"end": "(?=(?://|/\\*))|(?<!\\\\)(?=[;\\n])",
 			"name": "meta.preprocessor.import.cpp",
 			"patterns": [
 				{
@@ -325,19 +325,33 @@
 					"name": "string.quoted.other.lt-gt.import.cpp"
 				},
 				{
-					"match": "\\w+",
-					"name": "string.named.import.cpp"
+					"begin": "(:)?",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.switch.case.colon.c"
+						}
+					},
+					"end": "\\w+",
+					"endCaptures": {
+						"0": {
+							"name": "string.named.import.cpp"
+						}
+					},
+					"name": "meta-module.named.import.cpp"
 				}
 			]
 		},
 		{
-			"begin": "(?<=export\\b|^)\\s*(module)\\b\\s+((?:[_A-Za-z][_A-Za-z0-9]*\\b(::)?)*)",
+			"begin": "(?<=export\\b|^)\\s*(module)\\b\\s+((?:[_A-Za-z][_A-Za-z0-9]*\\b(:)?)*)",
 			"beginCaptures": {
 				"1": {
 					"name": "storage.type.cpp"
 				},
 				"2": {
 					"name": "entity.name.type.cpp"
+				},
+				"3": {
+					"name": "punctuation.switch.case.colon.c"
 				}
 			},
 			"end": "(?=[;\\n])",
