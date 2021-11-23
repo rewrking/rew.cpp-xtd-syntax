@@ -331,10 +331,13 @@
 							"name": "punctuation.switch.case.colon.c"
 						}
 					},
-					"end": "\\w+",
+					"end": "((\\w+)\\b([:.])?)",
 					"endCaptures": {
-						"0": {
+						"2": {
 							"name": "string.named.import.cpp"
+						},
+						"3": {
+							"name": "punctuation.switch.case.colon.c"
 						}
 					},
 					"name": "meta-module.named.import.cpp"
@@ -342,15 +345,15 @@
 			]
 		},
 		{
-			"begin": "(?<=(export\\b)|^)\\s*(module)\\b\\s+((?:[_A-Za-z][_A-Za-z0-9]*\\b(:)?)*)",
+			"begin": "(?<=(export\\b)|^)\\s*(module)\\b\\s+((?:[_A-Za-z][_A-Za-z0-9]*\\b([:.])?)*)",
 			"beginCaptures": {
-				"1": {
+				"2": {
 					"name": "storage.type.cpp"
 				},
-				"2": {
+				"3": {
 					"name": "entity.name.type.cpp"
 				},
-				"3": {
+				"4": {
 					"name": "punctuation.switch.case.colon.c"
 				}
 			},
