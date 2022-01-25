@@ -3,7 +3,7 @@
 	"displayName": "C++ Extended Syntax Highlighting",
 	"description" : "Alternative & Additional Syntax Highlighting for C++",
 	"version": "1.0.0",
-	"publisher": "catbytes",
+	"publisher": "rewrking",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/andrew-r-king/rew.cpp-xtd-syntax"
