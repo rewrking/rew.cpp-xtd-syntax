@@ -6,7 +6,7 @@
 	"publisher": "rewrking",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/andrew-r-king/rew.cpp-xtd-syntax"
+		"url": "https://github.com/rewrking/rew.cpp-xtd-syntax"
 	},
 	"icon": "icon.png",
 	"engines": {
