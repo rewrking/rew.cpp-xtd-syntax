@@ -275,7 +275,7 @@
 			"name": "entity.name.type.class.c"
 		},
 		{
-			"match": "\\b(ulong|ullong|uchar|llong|ldouble)\\b",
+			"match": "\\b(ulong|ullong|uchar|llong|ldouble|i8|i16|i32|i64|u8|u16|u32|u64|f16|f32|f64)\\b",
 			"name": "support.type.sys-types.cpp"
 		},
 		{
