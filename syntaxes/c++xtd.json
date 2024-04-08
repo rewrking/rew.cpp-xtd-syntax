@@ -187,6 +187,32 @@
 			]
 		},
 		{
+			"begin": "(u|u8|U|L)?R\"(|yaml)\\(",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.cpp"
+				},
+				"2": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"end": "\\s*\\)(|yaml)\"(_yaml)?",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.cpp"
+				},
+				"1": {
+					"name": "meta.string.literal.name.cpp"
+				}
+			},
+			"name": "string.quoted.double.raw.cpp",
+			"patterns": [
+				{
+					"include": "source.yaml"
+				}
+			]
+		},
+		{
 			"name": "meta.std-library.cpp",
 			"begin": "(?=std::)",
 			"end": "(?=[^a-z0-9_:])",
