@@ -1,7 +1,7 @@
 {
 	"name": "cpp-xtd-syntax",
 	"displayName": "C++ Extended Syntax Highlighting",
-	"description" : "Alternative & Additional Syntax Highlighting for C++",
+	"description": "Alternative & Additional Syntax Highlighting for C++",
 	"version": "1.0.0",
 	"publisher": "rewrking",
 	"repository": {
@@ -19,12 +19,23 @@
 		"languages": [
 			{
 				"id": "rc",
-				"extensions": [".rc"],
-				"aliases": [ "Rc" ]
+				"extensions": [
+					".rc"
+				],
+				"aliases": [
+					"Rc"
+				]
 			},
 			{
 				"id": "cpp",
-				"extensions": [".cppm", ".ixx", ".mpp", ".mxx", ".cpm", ".ccm"]
+				"extensions": [
+					".cppm",
+					".ixx",
+					".mpp",
+					".mxx",
+					".cpm",
+					".ccm"
+				]
 			}
 		],
 		"grammars": [
@@ -64,5 +75,8 @@
 				"path": "./syntaxes/rc.json"
 			}
 		]
+	},
+	"__metadata": {
+		"size": 715442
 	}
 }
